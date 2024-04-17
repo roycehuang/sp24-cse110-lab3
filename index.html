@@ -40,6 +40,10 @@
       
       <section>
         <h4>From Last Meeting: </h4>
+        <details>
+          <summary>Details</summary>
+          Literally the first meeting
+        </details>
         <div> N/A </div>
       </section>
       
@@ -63,7 +67,21 @@
       </section>
 
     </main>
-    
+    <form>
+      <fieldset>
+        <input type="text" id="name" name="name" required><br>
+        <textarea id="message" name="message" rows="4" columns="10"></textarea>
+        <datalist id="ducks">
+          <option value="duck"></option>
+          <option value="goose"></option>
+        </datalist><br>
+        <select id="identity" name="identity">
+          <option value="with us">with us></option>
+          <option value="not with us">not with us></option>
+        </select><br>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
     <footer>
       <small>
       Copyright © 2024 Capybara Archives. All Rights Reserved.
