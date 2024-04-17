@@ -2,7 +2,7 @@ Fill in the passphrases here.
 1. greenEggsAndHam
 2. iHateCplusplus
 3. HTMLRocks
-4. JacaScriptRules
+4. JavaScriptRules
 5. SvelteBeatsReact
 6. ThisIsJS
 7. YouFoundMe
