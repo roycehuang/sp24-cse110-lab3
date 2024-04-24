@@ -74,7 +74,7 @@ form {
     display: none;
     margin-top: 20px;
     padding: 0 0 20px 0;
-    background-color: color(srgb 0 255 0): 
+    background-color: color(srgb 0 255 0);
 }
 
 input, textarea, select, button {
