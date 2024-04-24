@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Sedan";
+    src: url('Sedan-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* External CSS Stylesheet */
+:root {
+    --main-color: #000;
+    --mixed: color-mix(rgb, #ff0000, #0000ff);
+}
+
+.selector {
+    color: var(--main-color, #ff0000);
+}
+/* General CSS Topics */
+body {
+    font-family: 'Sedan', sans-serif;
+    margin: 0 0 0 0;
+    padding: 0;
+    color: hsl(25,25%,25%);
+}
+header {
+    background-color:var(--mixed, #ff0000);
+    padding: 25px;
+    text-decoration: underline;
+    text-align: center;
+}
+div {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+body {
+    background-color: linen;
+}
+
+main {
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    border-style: dotted;
+    border-width: 40px;
+    border-color: yellow;
+    border-radius: 45px;
+}
+section {
+    margin-bottom: 20px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+}
+audio, video {
+    display: block;
+    margin: auto;
+    height: 2em;
+    width: 1em;
+}
+form {
+    display: none;
+    margin-top: 20px;
+    padding: 0 0 20px 0;
+    background-color: color(srgb 0 255 0): 
+}
+
+input, textarea, select, button {
+    margin-bottom: 10px; 
+    max-width: 100%;
+    min-width: 10%;
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: red;
+}
+button:active {
+    background-color: green;
+}
+footer {
+    padding-top: 10px;
+    padding-bottom: 3em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
