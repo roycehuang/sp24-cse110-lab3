@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Sedan";
+    src: url('');
+    font-weight: normal;
+    font-style: normal;
+}
+/* External CSS Stylesheet */
+:root {
+    --main-color: #000;
+    --mixed: color-mix(rgb, #ff0000, #0000ff);
+    --color: color(srgb 0 255 0);
+}
+
+.selector {
+    color: var(--main-color, #ff0000);
+}
+/* General CSS Topics */
+body {
+    font-family: 'Sedan', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: hsl(25,25%,25%);
+}
+header {
+    background-color:var(--mixed, #ff0000);
+    padding: 25px;
+}
+div {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+body {
+    background-color: linen;
+    
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
