@@ -4,6 +4,11 @@
     font-weight: normal;
     font-style: normal;
 }
+@media (hover: hover){
+    body {
+        background-color: mediumaquamarine;
+    }
+}
 /* External CSS Stylesheet */
 :root {
     --main-color: #000;
@@ -21,13 +26,13 @@ body {
     color: hsl(25,25%,25%);
 }
 header {
-    background-color:var(--mixed, #ff0000);
+    background-color:var(--mixed, green);
     padding: 25px;
-    text-decoration: underline;
+    text-decoration: unset;
     text-align: center;
 }
 div {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(166, 246, 148, 0.5);
 }
 body {
     background-color: linen;
@@ -40,11 +45,15 @@ main {
 .box {
     position: relative;
     display: flex;
-    flex: 1;
-    border-style: dotted;
-    border-width: 40px;
-    border-color: yellow;
-    border-radius: 45px;
+    flex-direction: row;
+    border-style: hidden;
+    border-width: 10px;
+    border-color: linen;
+    border-radius: 100px;
+}
+
+ul {
+    list-style-type: circle;
 }
 .px {
     width: 200px;
@@ -52,7 +61,14 @@ main {
 }
 .vw {
     width: 10vw;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+}
+.container {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 section {
     margin-bottom: 20px;
@@ -65,27 +81,27 @@ img {
     margin: 0 auto;
 }
 audio, video {
-    display: block;
+    display: inline-block;
     margin: auto;
     height: 2em;
     width: 1em;
 }
 form {
-    display: none;
+    display: block;
     margin-top: 20px;
     padding: 0 0 20px 0;
-    background-color: color(srgb 0 255 0);
+    background-color: color(srgb 0 150 244);
 }
 
 input, textarea, select, button {
     margin-bottom: 10px; 
     max-width: 100%;
-    min-width: 10%;
+    min-width: 50%;
     box-sizing: border-box; 
 }
 
 button:hover {
-    background-color: red;
+    background-color: cornflowerblue;
 }
 button:active {
     background-color: green;
@@ -97,4 +113,3 @@ footer {
     padding-right: 0;
     text-align: center;
 }
-

@@ -9,15 +9,15 @@
   <body>
     <main>
       <header>
-        <h1 style="color:peachpuff;text-align:center;">Duck Duck Goose Meeting</h1>
+        <h1 style="color:burlywood;text-align:center;">Duck Duck Goose Meeting</h1>
         <h2>DUCK Subtitle</h2>
         <h3>Date: April 15, 2024</h3>
       </header>
 
       <section>
         <h4>Attendance: </h4>
-        <ul>
-          <li> duck1 </li>
+        <ul class="box">
+          <li> duck </li>
           <li> quack </li>
           <li> blubber </li>
         </ul>
@@ -31,7 +31,7 @@
       
       <section>
         <h4>Agenda: </h4>
-        <ol>
+        <ol class="grid">
           <li>Introductions and Ice Breaker</li>
           <li>Review of Duck Wildlife</li>
           <li>Brainstorm ideas to repopulate the ducks</li>
@@ -46,8 +46,8 @@
           Literally the first meeting
         </details>
         <div class="box"> N/A 
-          <div class="box px"> what </div>
-          <div class="box vw"> huh </div>
+          <div class="px"> what </div>
+          <div class="vw"> huh </div>
         </div>
       </section>
       
@@ -68,24 +68,27 @@
           Learn more <a href="https://www.google.com/search?q=ducks">here</a>
         </p>
         <hr />
+        <form action="/action_page.php" method="get" class="form-example">
+          <fieldset>
+            <input type="text" id="name" name="name" required><br>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <datalist id="ducks">
+              <option value="duck"></option>
+              <option value="goose"></option>
+            </datalist><br>
+            <select id="identity" name="identity">
+              <option value="with us">with us</option>
+              <option value="not with us">not with us</option>
+            </select><br>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+        <hr />
       </section>
+      
 
     </main>
-    <form>
-      <fieldset>
-        <input type="text" id="name" name="name" required><br>
-        <textarea id="message" name="message" rows="4"></textarea>
-        <datalist id="ducks">
-          <option value="duck"></option>
-          <option value="goose"></option>
-        </datalist><br>
-        <select id="identity" name="identity">
-          <option value="with us">with us></option>
-          <option value="not with us">not with us></option>
-        </select><br>
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
+
     <footer>
       <small>
       Copyright © 2024 Capybara Archives. All Rights Reserved.
