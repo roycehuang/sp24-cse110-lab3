@@ -25,6 +25,12 @@ body {
     padding: 0;
     color: hsl(25,25%,25%);
 }
+* {
+    font-size: 16px;
+}
+a[href="https://www.google.com/search?q=ducks"] {
+    color: orange;
+}
 header {
     background-color:var(--mixed, green);
     padding: 25px;
@@ -34,6 +40,9 @@ header {
 div {
     background-color: rgba(166, 246, 148, 0.5);
 }
+#id {
+    background-color: red;
+}
 body {
     background-color: linen;
 }
@@ -41,7 +50,9 @@ body {
 main {
     padding: 20px;
 }
-
+h1:has(+ h2) {
+    margin-bottom: 4em;
+}
 .box {
     position: relative;
     display: flex;
@@ -51,9 +62,17 @@ main {
     border-color: linen;
     border-radius: 100px;
 }
-
-ul {
+div.box {
+    border: 1px solid #ccc;
+}
+ul > li{
     list-style-type: circle;
+}
+h4 ~ ul {
+    font-style: italic;
+}
+h4 + ol {
+    margin-top: 0;
 }
 .px {
     width: 200px;
@@ -70,10 +89,22 @@ ul {
     grid-row-start: 2;
     grid-row-end: 4;
 }
-section {
+section p{
     margin-bottom: 20px;
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+
+.example {
+    font-size: 1.2rem;
+    & > a {
+        color: tomato;
+        &:hover,
+        &:focus {
+            color: ivory;
+            background-color: tomato;
+        }
+    }
 }
 img {
     position: static;
